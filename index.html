@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokémon</title>
+</head>
+<body>
+    <h1>Buscar Pokémon</h1>
+    <input type="text" id="pokemoninput" placeholder="Escribe el pokemon aqui" list="lista-pokemon">
+    <datalist id="lista-pokemon">
+        <option value="Pikachu">
+        <option value="Charizard">
+        <option value="Snorlax">
+        <option value="Eevee">
+        <option value="Pidgey">
+        <option value="Porygon">
+        <option value="Mewtwo">
+        <option value="Lugia">
+        <option value="Rayquaza">
+        <option value="Zapdos">
+        <option value="Solgaleo">
+        <option value="Wo-Chien">
+        <option value="Ditto">
+    </datalist>
+    <button onclick="buscarpokemon(document.getElementById('pokemoninput').value)" type="button">Buscar</button>
+    <div id="resultado" style="width: 300px; min-height: 200px; border: solid; background-color: green; text-align: center; color: white;">
+        <p>Resultado</p>
+    </div>
+    <br>
+    <div class="Normales">
+        <h2>Pokémon Normales</h2>
+        <button onclick="buscarpokemon('pikachu')">Pikachu</button>
+        <button onclick="buscarpokemon('charizard')">Charizard</button>
+        <button onclick="buscarpokemon('snorlax')">Snorlax</button>
+        <button onclick="buscarpokemon('eevee')">Eevee</button>
+        <button onclick="buscarpokemon('pidgey')">Pidgey</button>
+        <button onclick="buscarpokemon('porygon')">Porygon</button>
+        <button onclick="buscarpokemon('ditto')">Ditto</button>
+    </div>
+    <div class="Legendarios">
+        <h2>Pokémon Legendarios</h2>
+        <button onclick="buscarpokemon('mewtwo')">Mewtwo</button>
+        <button onclick="buscarpokemon('lugia')">Lugia</button>
+        <button onclick="buscarpokemon('rayquaza')">Rayquaza</button>
+        <button onclick="buscarpokemon('zapdos')">Zapdos</button>
+        <button onclick="buscarpokemon('solgaleo')">Solgaleo</button>
+        <button onclick="buscarpokemon('wo-chien')">Wo-Chien</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
